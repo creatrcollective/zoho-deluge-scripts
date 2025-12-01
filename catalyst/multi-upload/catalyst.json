@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "targets": [
+      "bulk-upload"
+    ],
+    "ignore": [],
+    "source": "functions"
+  },
+  "client": {
+    "source": "client"
+  }
+}
