@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "targets": [
+      "ic2deviceHistory",
+      "ic2DataJob"
+    ],
+    "ignore": [],
+    "source": "functions"
+  }
+}
