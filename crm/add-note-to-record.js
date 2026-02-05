@@ -3,8 +3,8 @@ try
 	// ============================
 	// LOG A NOTE TO THE RECORD
 	// ============================
-	recordId = liId;
-	moduleName = "Line_Items";
+	recordId = myRecordId;
+	moduleName = "Module_API_Name";
 	noteContent = noteMessage;
 	// LOG NOTE
 	noteUrl = "https://www.zohoapis.com/crm/v8/" + moduleName + "/" + recordId + "/Notes";
