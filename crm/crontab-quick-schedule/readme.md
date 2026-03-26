@@ -18,7 +18,10 @@ For vim, type `i` to edit/insert, `Esc` when you're finished editing, and `:wq` 
 
 In the crontab file, you need to add the following line to schedule the job to run every five minutes. You can change the value to any integer that suits your needs. See cron file syntax for even more potential here.
 
-`*/5 * * * * /path/to/trigger_deluge_function.sh`
+`*/5 * * * * /path/to/trigger_deluge_function.sh >> /path/to/trigger_deluge.log 2>&1`
 
 ## That's it!
 As soon as you exit/save the cron file, your os should recognize the new job and begin immediately. It will continue until you re-edit the cron file and remove that line. Pretty cool!
+
+## Check the logs
+`tail -f /path/to/trigger_deluge.log`
