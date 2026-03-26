@@ -20,6 +20,16 @@ In the crontab file, you need to add the following line to schedule the job to r
 
 `*/5 * * * * /path/to/trigger_deluge_function.sh >> /path/to/trigger_deluge.log 2>&1`
 
+## Step 4 (MacOS) - Permissions
+run the following to make the sh file executable.
+`chmod +x /path/to/trigger_deluge_function.sh`
+
+Then, you need to allow mac OS to run cron. Go to system settings -> Privacy & Security -> Full Disk Access
+1. Open System Settings → Privacy & Security → Full Disk Access
+2. Click the + button
+3. Navigate to /usr/sbin/cron (press Cmd+Shift+G in the file picker to type the path)
+4. Add it and make sure the toggle is on
+
 ## That's it!
 As soon as you exit/save the cron file, your os should recognize the new job and begin immediately. It will continue until you re-edit the cron file and remove that line. Pretty cool!
 
